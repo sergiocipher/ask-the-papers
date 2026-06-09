@@ -1,11 +1,19 @@
 from fastapi import FastAPI
-from backend.api.paper_routes import router
+from api.paper_routes import router
 
 app = FastAPI()
+app.include_router(router)
+
 
 @app.get("/")
 def home():
-    return {"message": "hi babe how are u"}
+    return {
+        "message": "Research Synthesis Engine"
+    }
 
-app.include_router(router)
 
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy"
+    }
