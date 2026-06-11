@@ -1,7 +1,4 @@
 # ask-the-papers
-
-# 🔬 AI Research Synthesis Engine
-
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge\&logo=python)
